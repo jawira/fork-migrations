@@ -158,7 +158,7 @@ EOT
             );
 
             if ($allowNoMigration) {
-                $this->io->warning($message);
+                $this->io->success($message);
 
                 return 0;
             }

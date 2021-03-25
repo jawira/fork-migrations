@@ -160,7 +160,7 @@ EOT
             );
         } catch (NoChangesDetected $exception) {
             if ($allowEmptyDiff) {
-                $this->io->error($exception->getMessage());
+                $this->io->success($exception->getMessage());
 
                 return 0;
             }
