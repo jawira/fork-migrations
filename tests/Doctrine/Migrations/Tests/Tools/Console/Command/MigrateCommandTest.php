@@ -124,7 +124,7 @@ class MigrateCommandTest extends MigrationTestCase
             self::assertStringContainsString(
                 sprintf(
                     '[%s] The version "latest" couldn\'t be reached, there are no registered migrations.',
-                    $allowNoMigration ? 'WARNING' : 'ERROR'
+                    $allowNoMigration ? 'OK' : 'ERROR'
                 ),
                 $display
             );
